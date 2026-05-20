@@ -19,7 +19,10 @@ Configuring a Windows Server 2022 virtual machine as a fully functional Active D
 
 ## Step 1 - Dashboard & Setting Static IP
 <img width="1226" height="878" alt="image" src="https://github.com/user-attachments/assets/d1c103e6-1332-4aa0-8aaa-cfb6a6cd133c" />
+
 <br>
+<br>
+
 After installing Windows Server 2022 ISO's file and launching the VM, I configured a static IP address of 192.168.10.1 through the IPv4 network adapter settings to ensure consistent DNS resolution across the domain.
 
 <br>
