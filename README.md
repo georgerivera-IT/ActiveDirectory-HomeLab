@@ -47,7 +47,6 @@ After restarting, select the #2 option on Server Manager to "Add roles and featu
 Click next, check "Active Directory Domain Services" in the listed installations and install.
 
 <br>
-<br>
 
 <img width="1224" height="877" alt="image" src="https://github.com/user-attachments/assets/fb558e69-a77f-4365-8702-f907df5444de" />
 
@@ -78,7 +77,10 @@ Following the install and server restart, verify the Domain Controller is workin
 <img width="1224" height="879" alt="image" src="https://github.com/user-attachments/assets/09c2f46f-1f86-437e-b3e5-449b6a285cb4" />
 
 <br>
+<br>
 
 Observe AD and DNS listed in the left panel of Server Manager. Click to ensure it's working, then take a VMware snapshot to save progress as a 'checkpoint' to then work on other labs.
+
+<br>
 
 <img width="1221" height="877" alt="Screenshot 2026-05-19 210059" src="https://github.com/user-attachments/assets/3b0d190b-aa04-43c5-a147-40e80aa5a924" />
