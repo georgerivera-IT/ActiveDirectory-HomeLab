@@ -19,7 +19,14 @@ Demonstrating enterprise-level Active Directory user lifecycle management includ
 ## Step 1 — Created Organizational Unit Structure
 After opening Active Directory Users and Computers (ADUC), find the corp.local Domain and right-click, New, and create an Organizational Unit
 
-![Creating an OU]<img width="1226" height="874" alt="UAM2" src="https://github.com/user-attachments/assets/7a102da4-06dc-4059-9617-5f9e0f7a2d9f" />
+<img width="1226" height="874" alt="UAM2" src="https://github.com/user-attachments/assets/7a102da4-06dc-4059-9617-5f9e0f7a2d9f" />
+
+<br>
+<br>
+
+
+<img width="1223" height="876" alt="UAM3" src="https://github.com/user-attachments/assets/0f78be96-fbf0-4735-8e63-1da09398f3f4" />
+
 
 
 
