@@ -42,8 +42,12 @@ After restarting, select the #2 option on Server Manager to "Add roles and featu
 <img width="1221" height="879" alt="image" src="https://github.com/user-attachments/assets/c65b8a3a-e8ae-467b-a2ca-9cd17578bd2f" />
 
 <br>
+<br>
 
 Click next, check "Active Directory Domain Services" in the listed installations and install.
+
+<br>
+<br>
 
 <img width="1224" height="877" alt="image" src="https://github.com/user-attachments/assets/fb558e69-a77f-4365-8702-f907df5444de" />
 
@@ -53,11 +57,13 @@ After installing AD DS, a yellow flag icon appears in the top bar of Server Mana
 <img width="1220" height="327" alt="Screenshot 2026-05-19 204932" src="https://github.com/user-attachments/assets/c87f781c-41da-41ad-acac-d88cc24c2217" />
 
 <br>
+<br>
 
 After clicking the icon and clicking "Promote this server to a domain controller", select "Add a new forest" and in the Root domain field type: corp.local
 
 <img width="1224" height="877" alt="image" src="https://github.com/user-attachments/assets/6cdee4bd-2e90-4af1-a2e6-58aab31359fd" />
 
+<br>
 <br>
 
 Leave settings at default, ensure DNS server is checked, and create a DSRM password (I used the same password as the Administrator login). After setting the password, click through the next prompts by leaving everything at default, including DNS options, Additional Options, and Paths. After reviewing options, the prerequisites are checked and we can install.
