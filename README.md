@@ -20,7 +20,7 @@ Configuring a Windows Server 2022 virtual machine as a fully functional Active D
 ## Step 1 - Dashboard & Setting Static IP
 <img width="1226" height="878" alt="image" src="https://github.com/user-attachments/assets/d1c103e6-1332-4aa0-8aaa-cfb6a6cd133c" />
 <br>
-After installing Windows Server 2022 ISO's file and launching from VirtualBox, the System Dashboard immediately pops up after log in. During initial setup, go to the network icon in the bottom right, right-click, and navigate to "Open Network & Internet Settings". Click "Change adapter options", right-click Ethernet then properties, and open "Internet Protocol Version 4 (TCP/IPv4)". After this, configure the static IP address as shown.
+After installing Windows Server 2022 ISO's file and launching the VM, I configured a static IP address of 192.168.10.1 through the IPv4 network adapter settings to ensure consistent DNS resolution across the domain.
 
 <br>
 <br>
@@ -30,56 +30,49 @@ After installing Windows Server 2022 ISO's file and launching from VirtualBox, t
 <br>
 <br>
 
-We will rename this PC to DC01 (Domain Controller 1).
+Renamed the server to DC01 to reflect is role as the primary Domain Controller
 
 <br>
 
 <img width="1224" height="875" alt="image" src="https://github.com/user-attachments/assets/316dd523-26c3-4f76-9c99-d316239bc137" />
 
 ## Step 2 - Installing the Active Directory Domain Services (AD DS) Role
-After restarting, select the #2 option on Server Manager to "Add roles and features" and clicking next will reveal our renamed PC/server DC01.
+After restarting, I used Server Manager to add the Active Directory Domain Services role.
 
 <img width="1221" height="879" alt="image" src="https://github.com/user-attachments/assets/c65b8a3a-e8ae-467b-a2ca-9cd17578bd2f" />
 
 <br>
 <br>
 
-Click next, check "Active Directory Domain Services" in the listed installations and install.
+Confirming the server name DC01 at this stage verified that the rename from Step 1 applied correctly before proceeding with the role installation.
 
 <br>
 
 <img width="1224" height="877" alt="image" src="https://github.com/user-attachments/assets/fb558e69-a77f-4365-8702-f907df5444de" />
 
 ## Step 3 - Promote the Server to a Domain Controller
-After installing AD DS, a yellow flag icon appears in the top bar of Server Manager.
-
-<img width="1220" height="327" alt="Screenshot 2026-05-19 204932" src="https://github.com/user-attachments/assets/c87f781c-41da-41ad-acac-d88cc24c2217" />
-
-<br>
-<br>
-
-After clicking the icon and clicking "Promote this server to a domain controller", select "Add a new forest" and in the Root domain field type: corp.local
+Once AD DS was installed, I promoted DC01 to a Domain Controller by creating a new forest with the root domain corp.local.
 
 <img width="1224" height="877" alt="image" src="https://github.com/user-attachments/assets/6cdee4bd-2e90-4af1-a2e6-58aab31359fd" />
 
 <br>
 <br>
 
-Leave settings at default, ensure DNS server is checked, and create a DSRM password (I used the same password as the Administrator login). After setting the password, click through the next prompts by leaving everything at default, including DNS options, Additional Options, and Paths. After reviewing options, the prerequisites are checked and we can install.
+I left default settings in place for DNS, Additional Options, and Paths, and set a DSRM recovery password before completing the prerequisites check and finalizing the installation.
 
 <br>
 
 <img width="1227" height="877" alt="image" src="https://github.com/user-attachments/assets/99192318-0d8e-4fd0-8428-e4e2ee4632d0" />
 
 ## Step 4 - Take a VMware Snapshot
-Following the install and server restart, verify the Domain Controller is working in observing the login showing CORP\Administrator.
+After the server restarted, I verified the Domain Controller was functioning correctly by confirming the login displayed CORP\Administrator.
 
 <img width="1224" height="879" alt="image" src="https://github.com/user-attachments/assets/09c2f46f-1f86-437e-b3e5-449b6a285cb4" />
 
 <br>
 <br>
 
-Observe AD and DNS listed in the left panel of Server Manager. Click to ensure it's working, then take a VMware snapshot to save progress as a 'checkpoint' to then work on other labs.
+Observed AD and DNS listed in the left panel appeared as active roles in Server Manager. I then took a VMware snapshot to preserve this working baseline as a checkpoint before building on the environment in future labs.
 
 <br>
 
