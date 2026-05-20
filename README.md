@@ -1,4 +1,4 @@
-# ActiveDirectory-HomeLab
+# Active Directory Home Lab - Configuring a Windows VM for Active Directory
 
 ## Objective:
 Configuring a Windows Server 2022 virtual machine as a fully functional Active Directory Domain Controller in a virtualized lab environment using VMware Workstation Pro.
