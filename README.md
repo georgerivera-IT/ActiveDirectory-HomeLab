@@ -28,8 +28,11 @@ After installing Windows Server 2022 ISO's file and launching from VirtualBox, t
 <img width="1224" height="879" alt="image" src="https://github.com/user-attachments/assets/af12ea74-a838-4468-8841-00c9f35ef8dd" />
 
 <br>
+<br>
 
 We will rename this PC to DC01 (Domain Controller 1).
+
+<br>
 
 <img width="1224" height="875" alt="image" src="https://github.com/user-attachments/assets/316dd523-26c3-4f76-9c99-d316239bc137" />
 
