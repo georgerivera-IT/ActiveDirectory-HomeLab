@@ -20,7 +20,7 @@ Configuring a Windows Server 2022 virtual machine as a fully functional Active D
 ## Step 1 - Dashboard & Setting Static IP
 <img width="1226" height="878" alt="image" src="https://github.com/user-attachments/assets/d1c103e6-1332-4aa0-8aaa-cfb6a6cd133c" />
 <br>
-After installing Windows Server 2022 ISO's file and launching from VirtualBox, the System Dashboard immediately pops up after log in. During initial setup, go to the network icon in the bottom right, right-click, and navigate to "Open Network & Internet Settings". Click "Change adapter options", right-click Ethernet then properties, and open "Internet PRotocol Version 4 (TCP/IPv4)". After this, configure the static IP address as shown.
+After installing Windows Server 2022 ISO's file and launching from VirtualBox, the System Dashboard immediately pops up after log in. During initial setup, go to the network icon in the bottom right, right-click, and navigate to "Open Network & Internet Settings". Click "Change adapter options", right-click Ethernet then properties, and open "Internet Protocol Version 4 (TCP/IPv4)". After this, configure the static IP address as shown.
 
 <br>
 <br>
